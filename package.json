@@ -1,0 +1,14 @@
+{
+  "name": "hbank",
+  "version": "1.0.0",
+  "description": "Aplicando conteúdo aprendido",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Juliano Landim",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^19.0.6"
+  }
+}
