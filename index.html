@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HBank</title>
+</head>
+<body>
+    <header class="title">
+        <h1>Banco de horas</h1>
+    </header>
+    <main class="lanc">
+        <div class="hrsdia">
+            <div>
+                <label>Inicio do Expediente: </label>
+                <label>00:00</label>
+            </div>
+            <input class="pencil" type="image" src="img/pencil.png" alt="edit">
+            <div>
+                <label>Término do Expediente: </label>
+                <label>00:00</label>
+            </div>
+        </div>
+        <div class="QdLancamento">
+            <div>
+                <label>Dia<br>Expediente</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Inicio<br>Expediente</label>
+                <input type="time" name="" id="">
+            </div>
+            <div>
+                <label>Inicio<br>Almoço</label>
+                <input type="time" name="" id="">
+            </div>
+            <div>
+                <label>Fim<br>Almoço</label>
+                <input type="time" name="" id="">
+            </div>
+            <div>
+                <label>Fim<br>Expediente</label>
+                <input type="time" name="" id="">
+            </div>
+        </div>
+        <div class="btn">
+            <button class="btnLancar" type="button">Lançar</button>
+        </div>
+        <div class="QdHist">
+            <table class="tabela">
+                <tr>
+                    <th>Dia</th>
+                    <th>Inicio</th>
+                    <th>Almoço</th>
+                    <th>Almoço</th>
+                    <th>Fim</th>
+                    <th>Horas Trabalhadas</th>
+                    <th>Horas Extras</th>
+                    <th>Açao</th>
+                </tr>
+                <tr>
+                    <td><span>01/01</span></td>
+                    <td><span>00:00</span></td>
+                    <td><span>00:00</span></td>
+                    <td><span>00:00</span></td>
+                    <td><span>00:00</span></td>
+                    <td><span>00:00</span></td>
+                    <td><span>00:00</span></td>
+                    <td><input type="button" value="Edit"><input type="button" value="Lixo"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <span class="HrExtTotal">Horas extras totais:</span>
+        <span class="contadorExtra">00:00</span>
+    </footer>
+</body>
+</html>

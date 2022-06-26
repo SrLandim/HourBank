@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: cabecalho;
+    text-align: center;
+}
+
+main {
+    grid-area: conteudo;
+    text-align: center;
+}
+
+footer {
+    grid-area: rodape;
+    text-align: right;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-areas: 'cabecalho''conteudo''rodape';
+}
+/* --------------------------------------------------------------- */
+.title {
+    font-size: 18pt;   
+}
+/* --------------------------------------------------------------- */
+.hrsdia {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15%;
+    font-size: 15pt;
+}
+
+.pencil {
+    width: 19px;
+    height: 19px;
+}
+/* --------------------------------------------------------------- */
+.QdLancamento {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 2%;
+    margin: 0 5%;
+    border-radius: 25px;
+    align-items: flex-end;
+}
+
+
+.QdLancamento input {
+    border-radius: 8px;
+    height: 33px;
+    border-width: 1px 3px 3px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+.tabela {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.QdHist {
+    background-color: blueviolet;
+}
