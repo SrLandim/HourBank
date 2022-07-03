@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/font/inter.css">
+    <link rel="stylesheet" href="src/font/audiowide.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@240&display=swap" rel="stylesheet"> -->
     <title>HBank</title>
 </head>
 <body>
@@ -17,7 +22,7 @@
                 <label>Inicio do Expediente: </label>
                 <label>00:00</label>
             </div>
-            <input class="pencil" type="image" src="img/pencil.png" alt="edit">
+            <input class="pencil" type="image" src="src/img/pencil.png" alt="edit">
             <div>
                 <label>Término do Expediente: </label>
                 <label>00:00</label>
@@ -50,32 +55,52 @@
         </div>
         <div class="QdHist">
             <table>
-                <tr>
-                    <th>Dia</th>
-                    <th>Inicio</th>
-                    <th>Almoço</th>
-                    <th>Almoço</th>
-                    <th>Fim</th>
-                    <th>Horas Trabalhadas</th>
-                    <th>Horas Extras</th>
-                    <th>Açao</th>
-                </tr>
-                <tr>
-                    <td><span>01/01</span></td>
-                    <td><span>00:00</span></td>
-                    <td><span>00:00</span></td>
-                    <td><span>00:00</span></td>
-                    <td><span>00:00</span></td>
-                    <td><span>00:00</span></td>
-                    <td><span>00:00</span></td>
-                    <td><input type="button" value="Edit"><input type="button" value="Lixo"></td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Inicio</th>
+                        <th>Almoço</th>
+                        <th>Almoço</th>
+                        <th>Fim</th>
+                        <th>Horas<br>Trabalhadas</th>
+                        <th>Horas<br>Extras</th>
+                        <th>Açao</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>01/01</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td>
+                            <input class="pencil" type="image" src="src/img/pencil.png" alt="edit">
+                            <input class="pencil" type="image" src="src/img/delete.png" alt="trash">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>01/01</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td><span>00:00</span></td>
+                        <td>
+                            <input class="pencil" type="image" src="src/img/pencil.png" alt="edit">
+                            <input class="pencil" type="image" src="src/img/delete.png" alt="trash">
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </main>
     <footer>
-        <span class="HrExtTotal">Horas extras totais:</span>
-        <span class="contadorExtra">00:00</span>
+        <span class="HrExtTotal">HORAS EXTRAS TOTAIS:</span>
+        <span class="Contador">00:00</span>
     </footer>
 </body>
 </html>

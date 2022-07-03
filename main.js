@@ -8,7 +8,8 @@ function createWindow () {
     // Criando uma janela
     const win = new BrowserWindow({ 
         width: 800,
-        height:600
+        height:600,
+        resizable: false
     });
     // Abrindo html no app
     win.loadFile('index.html');

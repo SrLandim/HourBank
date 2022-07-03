@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: cabecalho;
+    text-align: center;
+}
+
+main {
+    grid-area: conteudo;
+    text-align: center;
+}
+
+footer {
+    grid-area: rodape;
+    text-align: right;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-areas: 'cabecalho''conteudo''rodape';
+}
+/* --------------------------------------------------------------- */
+.title {
+    font-size: 18pt;  
+    font-family: 'audiowide', sans-serif; 
+}
+/* --------------------------------------------------------------- */
+.hrsdia {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 15%;
+    font-size: 15px;
+    font-family: 'inter', sans-serif;
+}
+
+.pencil {
+    width: 19px;
+    height: 19px;
+    cursor: default;
+}
+/* --------------------------------------------------------------- */
+.lanc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.QdLancamento {
+    background-color: #EEE;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 25px;
+    align-items: flex-end;
+    min-width: 720px;
+    max-width: 720px;
+    font-family: 'inter', sans-serif;
+}
+
+
+.QdLancamento input {
+    border-radius: 8px;
+    height: 33px;
+    border-width: 1px 3px 3px 1px;
+    border-style: solid;
+    border-color: #000;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'inter', sans-serif;
+    font-size: 10px;
+}
+
+.btnLancar {
+    margin: 11px;
+    padding: 5px 36px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px 3px 3px 1px;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: normal;
+    color: #fff;
+    background-color: #4FD155;
+}
+/* --------------------------------------------------------------- */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    background-color: #d9d9d9;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+
+
+thead th {
+    border-bottom: 2px solid #000;
+}
+/* --------------------------------------------------------------- */
+footer {
+    margin-right: 20px;
+}
+
+.HrExtTotal {
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.Contador {
+    font-family: 'audiowide', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* --------------------------------------------------------------- */
